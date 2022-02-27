@@ -308,7 +308,7 @@
         initializeEngine();
 
         var level = 1; // Get parameter
-        /*if (level > 0 || level <= levelHelper.count) {
+        if (level > 0 || level <= levelHelper.count) {
             levelHelper.current = level;
             levelHelper.next = level + 1;
             loadLevel(level);
@@ -316,6 +316,6 @@
             levelHelper.current = 1;
             levelHelper.next = 2;
             loadLevel(1);
-        }*/
+        }
     };
 })();

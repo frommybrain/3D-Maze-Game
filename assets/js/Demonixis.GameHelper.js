@@ -3,8 +3,8 @@ Demonixis.GameHelper = Demonixis.GameHelper || {};
 
 Demonixis.GameHelper.LevelHelper = function(start, end) {
     this.current = start || 1;
-    this.next = this.current + 1;
-    this.count = end || 5;
+    this.next = this.current + 0;
+    this.count = end || 1;
     this.isFinished = false;
 
     this.getNext = function() {
