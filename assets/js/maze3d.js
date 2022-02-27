@@ -16,7 +16,7 @@
         renderer.clear();
 
         scene = new THREE.Scene();
-        scene.fog = new THREE.Fog(0xffffff, 25, 1000);
+        scene.fog = new THREE.Fog(0xffffff, 0, 0);
 
         camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
         camera.position.y = 50;
