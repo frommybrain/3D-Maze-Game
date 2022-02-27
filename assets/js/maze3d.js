@@ -98,7 +98,7 @@
             map: loader.load("assets/images/textures/wall_diffuse.jpg")
         });
 
-        repeatTexture(wallMaterial.map, 1);
+        repeatTexture(wallMaterial.map, 2);
 
         // Map generation
         for (var y = 0, ly = map.length; y < ly; y++) {
