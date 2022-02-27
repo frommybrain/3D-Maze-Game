@@ -16,7 +16,7 @@
         renderer.clear();
 
         scene = new THREE.Scene();
-        scene.fog = new THREE.Fog(0xffffff, 0, 0);
+        scene.fog = new THREE.Fog(0x777777, 25, 1000);
 
         camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
         camera.position.y = 50;
@@ -73,7 +73,7 @@
         scene.add(ground);
 
         var topMesh = new THREE.Mesh(floorGeometry, new THREE.MeshPhongMaterial({
-            map: loader.load("assets/images/textures/roof_diffuse.jpg")
+            map: loader.load("assets/images/textures/roo_diffuse.jpg")
         }));
 
         repeatTexture(topMesh.material.map, 16);
@@ -134,7 +134,9 @@
         }
 
         // Lights
-        var directionalLight = new THREE.HemisphereLight(0x192F3F, 0x28343A, 2);
+        //var directionalLight = new THREE.HemisphereLight(0x192F3F, 0x28343A, 2);
+        var directionalLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 2);
+
         directionalLight.position.set(1, 1, 0);
         scene.add(directionalLight);
     }
